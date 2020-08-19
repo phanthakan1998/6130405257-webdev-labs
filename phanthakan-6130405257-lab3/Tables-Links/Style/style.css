@@ -1,0 +1,19 @@
+table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th {
+        text-align: right;
+
+    }
+
+    td {
+        text-align: right;
+    }
+
+    #t01 {
+        background-color: yellow;
+    }
