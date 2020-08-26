@@ -1,0 +1,16 @@
+.center{
+    border: 10px solid green;
+    padding : 25px;
+    padding-left: 50px;
+    
+    background-color:lightyellow;
+}
+span{
+    background-color: lightblue;
+    
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+}

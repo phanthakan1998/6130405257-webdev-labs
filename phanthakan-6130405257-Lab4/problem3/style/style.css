@@ -1,0 +1,27 @@
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+    
+}
+.yellow{
+    background-color: yellow;
+    text-align: right;
+}
+.red{
+    background-color: red;
+    text-align: right;
+}
+table,
+    th,
+    td,tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+        height:30px;
+        padding: 10px;
+        
+    }
+h4{
+    margin-left: 150px;
+}
