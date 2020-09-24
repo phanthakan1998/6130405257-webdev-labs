@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      .deful-button {
+        width: 80px;
+        height: 24px;
+        border-radius: 12px;
+      }
+      @media only screen and (max-width: 800px) {
+        .left {
+          width: 70vw !important;
+        }
+        .right {
+          width: 30vw !important;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        body {
+          flex-direction: column !important;
+        }
+        .inner {
+          flex-direction: column !important;
+        }
+        .left {
+          width: 100vw !important;
+        }
+        .right {
+          width: 100vw !important;
+        }
+      }
+    </style>
+  </head>
+  <body style="display: flex; flex-direction: row; margin: 0">
+    <aside class="left" style="background-color: red; width: 30vw">
+      <div>
+        <button>-</button>
+        <h1>CoE Fam</h1>
+      </div>
+      <h2>Menu</h2>
+      <h2>main</h2>
+      <h2>help</h2>
+      <h2>KK</h2>
+    </aside>
+    <section
+      class="right"
+      style="
+        background-color: yellow;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+      "
+    >
+      <div style="background-color: teal; height: 100px"></div>
+      <div
+        class="inner"
+        style="background-color: black; display: flex; flex-direction: row"
+      >
+        <div style="background-color: tomato; width: 50%; height: 100px"></div>
+        <div style="background-color: wheat; width: 50%; height: 100px"></div>
+      </div>
+    </section>
+  </body>
+</html>

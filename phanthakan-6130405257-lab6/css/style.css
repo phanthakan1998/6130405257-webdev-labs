@@ -1,0 +1,10 @@
+#bold{
+    font-weight: bold;
+}
+li{
+    font-size: 25px;
+}
+
+*{
+    box-sizing: border-box;
+}
