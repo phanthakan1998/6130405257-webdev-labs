@@ -1,0 +1,22 @@
+html
+   
+    head
+        
+        title Student Form
+    Body  
+        h1(style = "text-align: center;") student from
+        form(action = "/", method = "POST")
+            div
+                label(for = "name"  ) Name:
+                input(name ="name" value = "Phanthakan")
+            br
+            div 
+                label(for = "internship") Internship company: 
+                input(name = "internship" value = "Alborg")
+            br
+            div
+                label(for="Skills") Skills:
+                input(name = "Skills" value = "eating") 
+            br
+            button(type = "submit") Submit
+        

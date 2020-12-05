@@ -1,0 +1,14 @@
+html
+    head   
+        title="MyProfile"
+    
+    body
+        h1
+            a(href = url, target = "_blank") #{name}
+        
+        img(src="/chiba.jpg", alt="Test", width ="300", height="auto")
+        h4 Intership companies
+        ul
+            li: a(href = company1, target = "_blank") #{company1Name}
+            li: a(href = company2, target = "_blank") #{company2Name}
+        .ul
