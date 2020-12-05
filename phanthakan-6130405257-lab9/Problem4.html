@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>JSON Object</title>
+  </head>
+
+  <style></style>
+
+  <body>
+    <h1>Reading Student Informaion</h1>
+    <ol id="demo"></ol>
+
+    <script>
+      var url = "places.json";
+      fetch(url)
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+            results = data.results;
+          for (var value of results) {
+            let listItem = document.createElement("Li");
+            listStudent = `<span style ="color: blue;"> name = ${value.name}</span><br>
+                            <span style ="color: green;"> location = ${value.geometry.location.lat} ${value.geometry.location.lng}</span>`;
+            listItem.innerHTML= listStudent;
+            console.log(listItem);
+            document.getElementById("demo").appendChild(listItem);
+          }
+        });
+    </script>
+  </body>
+</html>

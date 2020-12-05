@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+      li button {
+        font-size: 8px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item" />
+      <button onclick="addItem()">Add item</button>
+    </div>
+
+    <ul id="demo"></ul>
+    <p id="items"></p>
+
+    <script>
+      var addLi = document.getElementById("demo");
+      var count = addLi.childElementCount;
+      function addItem() {
+        var item = document.getElementById("item").value;
+        var delButton = document.createElement("BUTTON");
+        delButton.addEventListener("click", delItem);
+        var listItem = document.createElement("LI");
+
+        delButton.textContent = "Delete";
+        listItem.textContent = item;
+        addLi.appendChild(listItem).appendChild(delButton);
+        count = addLi.childElementCount;
+        document.getElementById("items").innerHTML =
+          addLi.childElementCount > 1
+            ? "The list has " + count + " items"
+            : "The list has " + count + " item";
+      }
+
+      function delItem(e) {
+        e.target.parentElement.remove();
+        count = addLi.childElementCount;
+
+        document.getElementById("items").innerHTML =
+          addLi.childElementCount > 1
+            ? "The list has " + count + " items"
+            : "The list has " + count + " item";
+      }
+    </script>
+  </body>
+</html>
